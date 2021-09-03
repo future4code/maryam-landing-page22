@@ -14,7 +14,7 @@ main {
 footer {
     background-color: rgb(255,145,77);
     color: white;
-    height: 70px;
+    height: 80px;
     padding-bottom: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -34,5 +34,27 @@ footer img {
 
 .atendimento-2 {
     text-align: center;
+}
+
+.margem {
+    margin-left: 5px;
+}
+
+@media screen and (max-device-width: 800px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        padding: 10px;
+    }
+
+    h4 {
+        color: black
+    }
+
+    .nome {
+        color: black;
+        text-align: center;
+    }
 }
 
