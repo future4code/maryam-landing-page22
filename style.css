@@ -234,6 +234,7 @@ main {
 
 #frase{
     margin-top:             4vh;
+    color: white;
 }
 
 #cadastro{
@@ -301,9 +302,9 @@ footer img {
     color:          rgb(255, 145, 77);
 }
 
-#frase{
+#frase1{
     margin-left:    10vw;
-    margin-top: 10vh;
+    margin-top:     10vh;
 
     color:rgb(255, 145, 77);
 }
@@ -403,13 +404,13 @@ footer img {
         color:          rgb(255, 145, 77);
     }
 
-    #frase{
+    #frase1{
         color:rgb(255, 145, 77);
     }
 
     #img-cartao{
-        margin-left: 30vw;
-        margin-top: 10vh;
+        margin-left: -50vw;
+        margin-top: 50vh;
         height:     25vh;
     }
 
