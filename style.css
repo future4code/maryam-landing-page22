@@ -4,6 +4,10 @@
     color:          white;
 }
 
+a{
+    text-decoration-line: none;
+}
+
 ul,
 li {
     margin: 0;
@@ -14,20 +18,34 @@ li {
 
 header {
     display:            flex;
-    justify-content:    space-between;
+    justify-content:    space-evenly;
     align-items:        center;
     max-width:          100vw;
-    height:             20vh;
+    height:             6vh;
     background-color: rgb(255, 145, 77);
     padding:            10px;
+}
+
+
+#segunda-tela{
+
+    background-color: rgb(255, 145, 77);
+
+    height:     80vh;
+}
+
+#terceira-tela{
+    height:     80vh;
+    background-color: rgb(255, 189, 89);
 }
 
 .menu {
     display: none;
 }
 
-img {
-    height: 90px;
+.img-header {
+    margin-top: 1vh;
+    height: 10vh;
 }
 
 nav {
@@ -51,18 +69,23 @@ li {
 
 li:hover {
     cursor: pointer;
-    color: black;
+    color:  yellow;
+    opacity: 30%;
 }
 
 .botao-minha-conta {
+    background-color: rgb(255, 189, 89);
     height: 50px;
     width: 120px;
     margin-right: 20px;
-    border-bottom: 1px rgb(255, 145, 77);
+    border: 1px solid white;
+    color: white;
 }
 
 .botao-minha-conta:hover {
-    background-color: rgb(255, 189, 89);
+    background-color: rgb(219, 158, 66);
+    color: white;
+    
 }
 
 
@@ -139,8 +162,9 @@ main {
 footer {
     background-color: rgb(255,145,77);
     color: white;
-    height: 80px;
-    padding-bottom: 15px;
+    height: 10vh;
+    padding-bottom: 1vh;
+    padding-top:    1vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
@@ -165,6 +189,10 @@ footer img {
 
 .margem {
     margin-left: 5px;
+}
+
+.botao-menu {
+    display: none;  
 }
 
 @media screen and (max-device-width: 800px) {
@@ -230,27 +258,15 @@ footer img {
     ul {
         display: none;
     }
-    .container-menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 40px;
-        margin-right: 20px;
-        margin-top: 12px;
-        cursor: pointer;
-    }
-    .home-menu,
-    .contatos-menu,
-    .somos-menu {
-        background-color: white;
-        height: 4px;
-        width: 100%;
-        margin: 9px;
-    }
+
+    
     .botao-minha-conta {
-        margin-top: 70px;
         height: 30px;
-        width: 300px;
+        width: 100px;
+    }
+    .botao-menu {
+        height: 30px;
+        width: 100px;
     }
 
 
