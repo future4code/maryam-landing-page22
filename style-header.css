@@ -6,7 +6,6 @@ li {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: sans-serif;
 }
 
 header {
@@ -17,6 +16,7 @@ header {
     height: 100px;
     background-color: rgb(255, 145, 77);
     padding: 10px;
+    font-family: sans-serif;
 }
 
 .menu {
@@ -48,47 +48,58 @@ li {
 
 li:hover {
     cursor: pointer;
-    color: black;
+    color: rgb(255, 189, 89);
+    opacity: 1;
+    transition: 0.5s
 }
 
 .botao-minha-conta {
     height: 50px;
     width: 120px;
     margin-right: 20px;
-    border-bottom: 1px rgb(255, 145, 77);
+    background-color: rgb(255, 145, 77);
+    border-style: initial;
+    border: 1px solid white;
+    color: white;
 }
 
 .botao-minha-conta:hover {
     background-color: rgb(255, 189, 89);
+    opacity: 1;
+    transition: 0.5s;
 }
 
 
 /* Mobile header */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+    header,
     ul {
-        display: none;
-    }
-    .container-menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 40px;
-        margin-right: 20px;
-        margin-top: 12px;
-        cursor: pointer;
-    }
-    .home-menu,
-    .contatos-menu,
-    .somos-menu {
-        background-color: white;
-        height: 4px;
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 3, 1fr;
+        grid-template-rows: 1;
+        height: 40%;
         width: 100%;
-        margin: 9px;
+    }
+    li {
+        margin-left: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .botao-minha-conta {
-        margin-top: 70px;
-        height: 30px;
-        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 60px;
+        height: 40px;
+        width: 40%;
+        display: flex;
+    }
+    img {
+        height: 30vh;
+        width: 40vw;
     }
 }
