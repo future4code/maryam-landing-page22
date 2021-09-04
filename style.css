@@ -262,7 +262,7 @@ main {
 footer {
     background-color: rgb(255,145,77);
     color: white;
-    height: 10vh;
+    height: 15vh;
     padding-bottom: 1vh;
     padding-top:    1vh;
     display: grid;
@@ -408,8 +408,8 @@ footer img {
     }
 
     #img-cartao{
-        margin-left: 30vw;
-        margin-top: 10vh;
+        margin-left: -50vw;
+        margin-top: 50vh;
         height:     25vh;
     }
 
